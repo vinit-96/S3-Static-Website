@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Booking Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book Now</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Destinations</h2>
+            <ul>
+                <li>
+                    <img src="" alt="Destination 1">
+                    <h3>Destination 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                    <img src="" alt="Destination 2">
+                    <h3>Destination 2</h3>
+                    <p>Proin sagittis, quam sit amet viverra aliquet, elit felis.</p>
+                </li>
+                <!-- Add more destinations as needed -->
+            </ul>
+        </section>
+        <section>
+            <h2>Booking Form</h2>
+            <form id="bookingForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="destination">Destination:</label>
+                    <select id="destination" required>
+                        <option value="">Select Destination</option>
+                        <option value="Destination 1">Destination 1</option>
+                        <option value="Destination 2">Destination 2</option>
+                        <!-- Add more destinations as needed -->
+                    </select>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="confirmationMessage" style="display: none;">
+                <p>Thank you for your booking, <span id="confirmedName"></span>!</p>
+                <p>We have received your booking for <span id="confirmedDestination"></span>.</p>
+                <p>An email has been sent to <span id="confirmedEmail"></span> with the booking details.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Booking Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
